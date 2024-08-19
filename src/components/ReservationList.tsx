@@ -17,8 +17,8 @@ export const ReservationList: React.FC<ReservationListProps> = ({
 }) => {
   const [sortField, setSortField] = useState<
     keyof Reservation | "fullName" | null
-  >(null);
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  >("start"); // change it depend on the real reserved date start or businessDate
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
 
   const sortedReservations = useMemo(() => {
     if (!sortField) return reservations;
