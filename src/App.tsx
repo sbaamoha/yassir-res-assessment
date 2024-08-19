@@ -50,6 +50,24 @@ function App() {
     const fetchData = async () => {
       try {
         const jsonData = await fetchJsonContent();
+        // setData([
+        //   ...jsonData.reservations,
+        //   {
+        //     id: 99,
+        //     businessDate: "06.02.2018",
+        //     status: "CHECKED OUT",
+        //     shift: "BREAKFAST",
+        //     start: "2024-08-06T08:00:00Z",
+        //     end: "2024-08-06T09:00:00Z",
+        //     quantity: 1,
+        //     customer: {
+        //       firstName: "Mohamed",
+        //       lastName: "Sba",
+        //     },
+        //     area: "BAR",
+        //     guestNotes: "Likes the blue cheese burguer",
+        //   },
+        // ]);
         setData(jsonData.reservations);
       } catch (error) {
         console.error("Error fetching JSON data:", error);
