@@ -87,7 +87,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               area: "",
             });
           }}
-          className="col-span-2"
+          className="col-span-2 bg-purple-700 hover:bg-purple-600 transition-colors"
         >
           Clear All
         </Button>

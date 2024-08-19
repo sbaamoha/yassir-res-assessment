@@ -80,11 +80,18 @@ function App() {
     <main>
       <header>
         <nav className="flex mx-6 justify-between">
-          <h2 className="text-3xl font-bold m-3">Restaurent</h2>
+          <img
+            src="/logo-yassir-forward-dark.svg"
+            className="w-40 h-20"
+            alt="yassir logo"
+          />
+          {/* <h2 className="text-3xl font-bold m-3">Restaurent</h2> */}
         </nav>
       </header>
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Reservation List</h1>
+        <h1 className="text-2xl font-bold mb-4 text-purple-700">
+          Reservation List
+        </h1>
         <FilterBar onFilterChange={handleFilterChange} filters={filters} />
         <SearchBar onSearch={handleSearch} />
         <ReservationList reservations={filteredReservations} />
