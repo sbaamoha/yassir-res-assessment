@@ -1,8 +1,6 @@
 const fetchGistData = async () => {
   try {
-    const response = await fetch(
-      "https://api.github.com/gists/5e7c48768af1eb721d9e2e1d874cd9a0"
-    );
+    const response = await fetch(import.meta.env.VITE_API_URL);
     const data = await response.json();
     return data;
   } catch (error) {
