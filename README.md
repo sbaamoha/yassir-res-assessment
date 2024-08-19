@@ -1,2 +1,0 @@
-# yassir-res-assessment
- 
